@@ -51,5 +51,6 @@ console.log(newFruit);
   //adding without removing
   fruit.splice(0,0,'apple','mango');
   console.log(fruit);
+  console.log("hello world");
   
   
