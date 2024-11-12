@@ -10,7 +10,10 @@ console.log(update(2));
 function myname(){
   let status={
     name:"fabrice",
-    campus:"gishushu"
+    campus:"gishushu",
+    diplayinfo: function displayinfo(){
+      return ` you ${this.name}  your at `
+    }
     
   }
 }
