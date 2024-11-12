@@ -12,11 +12,12 @@ function myname(){
     name:"fabrice",
     campus:"gishushu",
     diplayinfo: function displayinfo(){
-      return ` you ${this.name}  your at `
+      return ` you ${this.name}  your at ${this.campus}`;
     }
     
   }
 }
+console.log(myname.displayinf);
 
 
 
