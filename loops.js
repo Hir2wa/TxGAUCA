@@ -7,6 +7,14 @@ console.log(update(2));
 
 
 
+function myname(){
+  let status={
+    name:"fabrice",
+    
+  }
+}
+
+
 
 
 
