@@ -84,7 +84,7 @@ let facebookprofile = {
   
   
   console.log(facebookprofile.deleteMessage(0));            
-  console.log(facebookprofile.addFriend(4));               
+  console.log(facebookprofile.addFriend(5));               
   console.log(facebookprofile.removeFriend(1));            
   console.log(facebookprofile.postmessage("Hello Alain")); 
   console.log(facebookprofile.deleteMessage(1));           
