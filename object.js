@@ -8,7 +8,7 @@ var user ={
  let breakfast = {
     name:"the lumberjack",
     price : "$9.95",
-    ingredients:["eggs","sausage","hashbrowns","pancakes"]
+    ingredients:["eggs","sugar","sausage","hashbrowns","pancakes"]
     
 };
 console.log(breakfast.ingredients);
