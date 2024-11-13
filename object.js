@@ -2,7 +2,7 @@
 var user ={
     email:"user@gmail.com",
     firstnamr:"first",
-    lastname:"last"
+    lastname:"lastname"
 };
  console.log(user["email"]);
  let breakfast = {
