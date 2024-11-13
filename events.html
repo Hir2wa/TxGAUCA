@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <button id="mybotton">click me!</button>
+  <script>
+
+/*
+Events are the backbone of interactive web pages, 
+allowing your code to respond to user actions like clicks, typing, mouse movements,
+ and more. Let’s dive into the basics of handling events in JavaScript.
+
+ 1. What Are Events?
+Events are actions that happen in the browser, typically triggered by the user or 
+the browser itself. Common events include:
+
+1.Mouse Events: click, dblclick, mouseover, mouseout, etc.
+2.Keyboard Events: keydown, keyup, keypress
+3.Form Events: submit, change, focus, blur
+4.Window Events: load, resize, scroll
+
+
+
+*/
+  // to select the element 
+  const  button = document.getElementById('mybotton');
+  // add an event listener 
+
+  button.addEventListener('click',()=>{
+    alert("button was clicked");
+  });
+
+
+  </script>  
+</body>
+</html>

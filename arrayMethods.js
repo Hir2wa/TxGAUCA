@@ -35,7 +35,16 @@ const evenNumber = numbers.filter( num=> num%2===0);
 The slice method is used to extract a section of an array without modifying the original array.
  It returns a new array with the selected elements.
 
+ 
 
+/- deletion from a specific index is done using splice() method
+
+/ TIP - 
+// In an array, 
+// - addition at the end is done using push() method
+// - addition at a specific index is done using splice() method
+// - deletion from the beginning is done using pop() method
+// 
 */
 
 let fruit = ['banana','apple','mango','cherry'];
@@ -52,5 +61,18 @@ console.log(newFruit);
   fruit.splice(0,0,'apple','mango');
   console.log(fruit);
   console.log("hello world");
+  console.log("heloo");
   
-  
+  let facebookprofile={
+    name:"Alain",
+     friends :3,
+     messages :["hello world"],
+     postmessage: function mypostmessage(message){
+        if(message>0) {
+         facebookprofile.messages.push(message);
+        }
+     },
+      deleteMessage: function iDelete(index){
+       facebookprofile.messages.
+      },
+  }
