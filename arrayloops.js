@@ -1,5 +1,5 @@
 
-let fruit = ['banana','apple','mango','cherry'];
+let fruit = ['banana','mango','cherry'];
 for (let i = 0; i < fruit.length; i++) {
 fruit[i] +='wow';
 fruit[i] = fruit[i].toUpperCase();
