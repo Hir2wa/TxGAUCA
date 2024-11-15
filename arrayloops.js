@@ -6,7 +6,7 @@ fruit[i] = fruit[i].toUpperCase();
 
 
 }
-console.log(fruit);
+console.log(fruit[]);
 
 
 //for... each         has 3 parameters   num index  array 
