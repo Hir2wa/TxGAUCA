@@ -2,13 +2,13 @@
 var user ={
     email:"user@gmail.com",
     firstnamr:"first",
-    lastname:"last"
+    lastname:"lastname"
 };
  console.log(user["email"]);
  let breakfast = {
     name:"the lumberjack",
     price : "$9.95",
-    ingredients:["eggs","sausage","hashbrowns","pancakes"]
+    ingredients:["eggs","sugar","sausage","hashbrowns","pancakes"]
     
 };
 console.log(breakfast.ingredients);
@@ -83,4 +83,17 @@ let facebookprofile = {
   };
   
   
+<<<<<<< HEAD
   
+=======
+  console.log(facebookprofile.deleteMessage(0));            
+  console.log(facebookprofile.addFriend(5));               
+  console.log(facebookprofile.removeFriend(1));            
+  console.log(facebookprofile.postmessage("Hello Alain")); 
+  console.log(facebookprofile.deleteMessage(1));           
+  console.log(facebookprofile.postmessage("hello Alain"));  
+  console.log(facebookprofile.removeFriend(1));         
+
+  console.log(facebookprofile);
+  
+>>>>>>> ca0bbc1414c9e33df011681aee9917f627cae4eb

@@ -58,10 +58,13 @@ console.log(newFruit);
   fruit.splice(1,2,'graps','tomatoes');
   console.log(fruit);
   //adding without removing
-  fruit.splice(0,0,'apple','mango');
+  fruit.splice(0,0,'apple','mango','banana');
   console.log(fruit);
   console.log("hello world");
   console.log("heloo");
   
+<<<<<<< HEAD
  
+=======
+>>>>>>> ca0bbc1414c9e33df011681aee9917f627cae4eb
 
