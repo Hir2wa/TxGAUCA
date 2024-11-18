@@ -234,3 +234,13 @@ const iterator = arwray[Symbol.iterator]();
  console.log(iterator.next());
  console.log(iterator.next());
  console.log(iterator.next());
+
+ console.log(Number("245r"));
+  console.log(parseInt("sgjsj.334"))
+  console.log(parseFloat("sdhnsdin.90"));
+  console.log(parseInt("86.ab"));
+  
+  
+     let numberArray  = new Array(20);
+     console.log(numberArray.length);
+     
