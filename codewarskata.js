@@ -243,4 +243,25 @@ const iterator = arwray[Symbol.iterator]();
   
      let numberArray  = new Array(20);
      console.log(numberArray.length);
-     
+
+
+
+     //    how  toReversed works  //   it  creates  another new arrayb without modfying   the original one 
+      let newwArray =  arwray.toReversed();
+       console.log(arwray);
+       
+      console.log(newwArray);   
+      
+      
+  //  toString doesn't  modfing original  array 
+      let myyarray =["Alain",50,"Fabrice"];
+      let newMyArray = myyarray.toString();
+      console.log(newMyArray);
+      console.log(myyarray);
+      
+       let splittedAray = newMyArray.split(" ")
+       console.log(splittedAray);
+      let thatthisnew = "Alain,50,  Fabrice";
+      let newSplitted = thatthisnew.split(" ");
+      console.log(newSplitted);
+      
