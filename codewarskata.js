@@ -264,4 +264,14 @@ const iterator = arwray[Symbol.iterator]();
       let thatthisnew = "Alain,50,  Fabrice";
       let newSplitted = thatthisnew.split(" ");
       console.log(newSplitted);
+      // values   which  retrun new  iterible object 
+      let  words=["Alain",50,"Fabrice"];
+      let newWords = words.join(" ");
+      console.log(newWords);
       
+
+       // keys()   returns  the      indexes  of   every element 
+
+       // includes(method)  check if the  array include  that element and rerturn true 
+       console.log(words.includes(50));
+        
