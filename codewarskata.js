@@ -170,4 +170,67 @@ function digitize(n) {
  console.log(ssort());
 
 
+
+ //  write a  functionn  thata= takes  a   sentence and  reverse  and  return the  reversed   word 
+ //  am a student at auca 
+  function mysentence(sentence){
+    
+      return  sentence.split().
+         
+      reverse().join();
+  }
+  console.log(mysentence(("am a student at auca ")));
      
+  const numberrs = [3, 2, 4, 1, 5];
+  // even if  yoou can create a new array still   it will be referencing it     means it will  change 
+// [...numbers] creates a shallow copy, so reverse() does not mutate the original
+const reverted = [...numberrs].reverse();
+reverted[0] = 5;
+ const rreversed = numberrs.reverse();
+console.log(numbers[0]); // 3
+console.log(reverted);
+console.log(numberrs);
+
+//   shift  return   remove  the  first element in the array and  return that    value
+let nmum= numberrs.shift()
+console.log(nmum);
+console.log(numberss);
+const array = [1, 2, 3, 4, 5];
+
+
+//  checks  if  in the  array  there  is  condition    is true and  returnn  the  true   
+// note  it doesn't  modfy the  array 
+// Checks whether an element is even
+const even = (element) => element % 2 === 0;
+
+console.log(array.some(even));
+// Expected output: true
+ 
+ 
+// sort  modft  the orginal array
+ console.log(numberrs.sort());
+  console.log(numberrs);
+//  splice   modfy   the original   array  it  does not craete a copy 
+
+
+const array1 = ['a', 'b', 'c'];
+const iterator1 = array1[Symbol.iterator]();
+
+for (const value of iterator1) {
+  console.log(value);
+}
+
+// Expected output: "a"
+// Expected output: "b"
+// Expected output: "c" 
+
+
+// iteribles  
+const arwray = [1, 2, 3];
+const iterator = arwray[Symbol.iterator]();
+ console.log(iterator.next());
+ console.log(iterator.next());
+ console.log(iterator.next());
+ console.log(iterator.next());
+ console.log(iterator.next());
+ console.log(iterator.next());

@@ -1,20 +1,47 @@
-// using  literal methods
+// // using  literal methods
 
-let obj = {
-name:"Alain"
+// let obj = {
+// name:"Alain"
+// }
+// console.log(obj.name);
+ 
+// //using   costractor 
+
+//  let person = new Object();
+//  person.name = "Alain",
+//  person.age ="40",
+//  person.occupation = "dev"
+
+//  console.log(person);
+
+
+// person.country = "Rwanda";
+// console.log(person);
+// console.log(person.name);
+
+
+//shallow copy
+
+
+  let obj1= {
+    name:"Alain",
+    status:"unkown",
+ name :"unkown",
+ obj2:{
+    name:"Alain",
+    status:"unkwon"
+ }
 }
-console.log(obj.name);
 
-//using   costractor 
+  let objcopy = {...obj1};
 
- let person = new Object();
- person.name = "Alain",
- person.age ="40",
- person.occupation = "dev"
+   objcopy.obj2.name="fabrice";
+  console.log(obj1);
+  
+  console.log(objcopy);
 
- console.log(person);
+  const array1 = ['a', 'b', 'c'];
 
-
-person.country = "Rwanda";
-console.log(person);
-console.log(person.name);
+for (const element of array1) {
+  console.log(element);
+}

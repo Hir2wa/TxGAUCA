@@ -63,16 +63,5 @@ console.log(newFruit);
   console.log("hello world");
   console.log("heloo");
   
-  let facebookprofile={
-    name:"Alain",
-     friends :3,
-     messages :["hello world"],
-     postmessage: function mypostmessage(message){
-        if(message>0) {
-         facebookprofile.messages.push(message);
-        }
-     },
-      deleteMessage: function iDelete(index){
-       facebookprofile.messages.
-      },
-  }
+ 
+
