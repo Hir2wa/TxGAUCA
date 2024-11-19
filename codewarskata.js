@@ -275,3 +275,13 @@ const iterator = arwray[Symbol.iterator]();
        // includes(method)  check if the  array include  that element and rerturn true 
        console.log(words.includes(50));
         
+
+    // callback  is a  function  that  passed as  an argument  to  another  function 
+              function greet(name,callback){
+                return callback(name);
+              }
+               function howto(name){
+                  return "hello  " +name;
+               }
+
+               console.log(greet("Alain", howto));
