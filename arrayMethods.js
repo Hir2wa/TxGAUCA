@@ -63,8 +63,50 @@ console.log(newFruit);
   console.log("hello world");
   console.log("heloo");
   
-<<<<<<< HEAD
- 
-=======
->>>>>>> ca0bbc1414c9e33df011681aee9917f627cae4eb
+  // set method  which remove   duplicates in the array 
+  let arrayy=   [1,3,4,5,5];
+   let newArray = [...new Set(arrayy)];
+  console.log(arrayy)
 
+
+
+  const array = [1, 2, 2, 3, 4, 4, 5];
+
+console.log(uniqueArray); // Output: [1, 2, 3, 4, 5]
+
+
+
+function distinct(a) {
+
+  const uniqueArray = a.reduce((acc, value) => {
+    if (!acc.includes(value)) {
+        acc.push(value);
+    }
+    return acc;
+}, []);
+
+  return uniqueArray;
+}
+
+  console.log(distinct([1,2,3,4,5,5,5]));
+
+
+  //!includes().     can help use to. remove. certain values in the allary.   by pushing them to our array
+
+  function removeVowels(sentence) {
+    // Split the sentence into an array of characters
+    const charArray = sentence.split('');
+    
+    // Define the vowels
+    const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    
+    // Filter the array to remove vowels
+    const filteredArray = charArray.filter(char => !vowels.includes(char));
+    
+    // Join the array back into a string and return
+    return filteredArray.join('');
+}
+
+// Example usage
+const sentence = "am. a. studrnt. at. auca. aaa";
+console.log(removeVowels(sentence)); 
