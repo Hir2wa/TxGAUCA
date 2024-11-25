@@ -14,3 +14,11 @@
 // 
 // we  can select an element by id
 document.getElementById('footer')
+// Now, what do you think will happen if you used document.getElementById('<some-nonexistent-ID>') 
+//to search for some ID that doesn't actually exist in the HTML page?
+//   the answet null will be returned 
+//  these  return a single element 
+
+
+
+
