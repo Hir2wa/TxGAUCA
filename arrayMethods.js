@@ -85,7 +85,7 @@ function distinct(a) {
     return acc;
 }, []);
 
-  return uniqueArray;
+  return 0; 
 }
 
   console.log(distinct([1,2,3,4,5,5,5]));
@@ -110,3 +110,34 @@ function distinct(a) {
 // Example usage
 const sentence = "am. a. studrnt. at. auca. aaa";
 console.log(removeVowels(sentence)); 
+
+
+  var a =4;
+  console.log(a);
+  var a = 6;
+  console.log(a);
+  
+  
+
+
+
+
+  //   fing  time  for  ghm work out
+
+  function   ghmHours(name, hours){
+     
+    function Name(){
+      return name;
+    }
+   
+
+    function hours(){
+    return hours++;
+    }
+  
+
+    return `"  Name: ${name}  ,   Hours: ${hours}"`;
+
+  }
+
+console.log(ghmHours("Alain",25));

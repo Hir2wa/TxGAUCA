@@ -287,3 +287,32 @@ const iterator = arwray[Symbol.iterator]();
                console.log(greet("Alain", howto));
 
 
+               function   ghmHours(name, hours){
+     
+                function Name(){
+                  return name;
+                }
+               
+                  
+            
+            
+                function yourHours(){
+                  return hours;
+                }
+                
+                
+              
+            
+                return ` Name: ${name}  ,   Hours: ${hours}`;
+            
+              }   
+
+       
+              let Alain = ghmHours("Alain", 12);
+              console(Alain);            
+          
+            
+            
+            
+        
+            
