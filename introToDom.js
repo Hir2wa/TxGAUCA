@@ -110,3 +110,19 @@ Summary
 id, className, and tagName are properties that return metadata about the element (its ID, class, or tag type).
 They are not the element itself but descriptions of the element.
 To get the actual element, you use DOM methods like getElementById() or querySelector().
+textContent, and innerText). Here's how you can differentiate between these methods:
+
+1. querySelector()
+What It Does: querySelector() is a general-purpose selector that allows you to select an element using any CSS selector. This means you can use it to select elements by ID, class, tag name, or any other complex CSS selector like attribute selectors or pseudo-classes.
+
+Syntax:
+
+document.querySelector(selector);
+Selector Type:
+
+ID Selector: #id
+Class Selector: .class
+Tag Name: div, p, etc.
+Attribute Selectors: [name="value"]
+Pseudo-selectors: :first-child, :nth-child, etc.
+Example:
