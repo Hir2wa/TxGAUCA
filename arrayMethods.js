@@ -124,20 +124,4 @@ console.log(removeVowels(sentence));
 
   //   fing  time  for  ghm work out
 
-  function   ghmHours(name, hours){
-     
-    function Name(){
-      return name;
-    }
-   
-
-    function hours(){
-    return hours++;
-    }
-  
-
-    return `"  Name: ${name}  ,   Hours: ${hours}"`;
-
-  }
-
-console.log(ghmHours("Alain",25));
+ 

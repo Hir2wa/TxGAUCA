@@ -277,6 +277,17 @@ const iterator = arwray[Symbol.iterator]();
         
 
     // callback  is a  function  that  passed as  an argument  to  another  function 
+
+
+
+
+//     Real-Life Example:
+// Parent: The parent teaches the child valuable lessons or gives them resources (like money, knowledge, or skills).
+// Child: The child can "remember" these lessons and use them later in life, even when the parent is no longer actively involved.
+// If the child doesn't use or remember the lessons or resources from the parent, it’s like no closure. 
+//The child doesn't retain anything from the parent, and there’s no lasting connection to the parent’s environment (their "scope").
+
+
               function greet(name,callback){
                 return callback(name);
               }
@@ -312,7 +323,9 @@ const iterator = arwray[Symbol.iterator]();
               console(Alain);            
           
             
-            
+
+
+                
             
         
             
