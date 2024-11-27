@@ -7,15 +7,28 @@
 </head>
 <body>
     <h1 id="mainTitle">Welcome to DOM Practice!</h1>
+    <h1 id="main-heading">Welcome to DOM Practice!</h1>
+    <h1 id="other-heading">Welcome to DOM Practice!</h1>
     <div class="container">
         <p class="description">This is the first paragraph.</p>
         <p class="description">This is the second paragraph.</p>
         <p id="specialParagraph">This is a special paragraph with an ID.</p>
     </div>
+  
+   
     <footer>
         <p class="footer-text">This is the footer text.</p>
     </footer>
     <script>
+
+
+const mainHeading = document.querySelector('#main-heading');
+const otherHeading = document.querySelector('#other-heading');
+const excitedText = document.createElement('span');
+
+excitedText.textContent = '!!!';
+mainHeading.appendChild(excitedText);
+otherHeading.appendChild(excitedText);
 
         // exerciise one getting   h1
         let myh1 = document.getElementById('mainTitle');
