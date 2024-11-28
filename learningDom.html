@@ -14,7 +14,9 @@
         <p class="description">This is the second paragraph.</p>
         <p id="specialParagraph">This is a special paragraph with an ID.</p>
     </div>
-  
+    <div id="container">
+        <p>This is a paragraph inside a container.</p>
+      </div>
    
     <footer>
         <p class="footer-text">This is the footer text.</p>
@@ -49,6 +51,23 @@ otherHeading.appendChild(excitedText);
              console.log(mySpeacial.id);
              console.log(mySpeacial.tagName);
              console.log(mySpeacial.innerText);
+
+
+              // Select the element where you want to insert new HTML
+  let container = document.getElementById('container');
+
+// Insert HTML as the first child of the container
+container.insertAdjacentHTML('afterbegin', '<p>This is a new paragraph added at the start.</p>');
+
+// Insert HTML as the last child of the container
+container.insertAdjacentHTML('beforeend', '<p>This is a new paragraph added at the end.</p>');
+
+// Insert HTML before the container (before the container element itself)
+container.insertAdjacentHTML('beforebegin', '<h2>This heading is added before the container.</h2>');
+
+// Insert HTML after the container (after the container element itself)
+container.insertAdjacentHTML('afterend', '<footer>This footer is added after the container.</footer>');
+</script>
             </script>
 
 </body>
