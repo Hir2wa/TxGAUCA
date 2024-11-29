@@ -328,4 +328,17 @@ const iterator = arwray[Symbol.iterator]();
                 
             
         
+
+              // Return an array
+function fizzbuzz(n)
+{
+   let myArray = [];
+  
+  for( i=1; i<=n ; i++){
+     if ( i%3==0) {
+      myArray.push("Fizz")
+     } else if( i%5==0){
+      myArray.push("Buzz");
+     }
+
             
