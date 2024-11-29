@@ -371,3 +371,4 @@ function fizzbuzz(n) {
   return result;
 }
 
+console.log(fizzbuzz(43));
