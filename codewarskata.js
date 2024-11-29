@@ -339,6 +339,18 @@ function fizzbuzz(n)
       myArray.push("Fizz")
      } else if( i%5==0){
       myArray.push("Buzz");
-     }
+     }else if( i%3==0 && i%5==0 ){
+      myArray.push("FizzBuzz")
+    } 
+
+    return myArray;
+ }
+
+
+
+}
+console.log(fizzbuzz(20));
+ 
+
 
             
