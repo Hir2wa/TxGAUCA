@@ -39,3 +39,12 @@ parent.addEventListener('click', () => {
 
 // Commonly used for event delegation, where a parent element handles events from its child elements.
 // Example: Attaching a single click listener to a <ul> for handling clicks on multiple <li> elements.
+
+// No, it is not a must to explicitly pass a parameter when attaching an event listener. However,
+//  the event object (commonly named event or e) 
+// is automatically passed to the event listener function by the browser.
+
+// How the Event Object Works
+// When an event occurs, the browser creates an event object containing details about the event 
+// (e.g., the type of event, the target element, mouse position, etc.). 
+// This object is automatically passed to the callback function.
