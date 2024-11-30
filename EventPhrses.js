@@ -21,3 +21,12 @@
 // [Parent Element]
 //    ↑ Bubbling Phase
 // [Document]
+
+
+const parent = document.querySelector('#parent');
+const child = document.querySelector('#child');
+
+// Listener in the bubbling phase (default)
+parent.addEventListener('click', () => {
+    console.log('Parent Bubbling');
+});
