@@ -127,7 +127,7 @@
 // Pseudo-selectors: :first-child, :nth-child, etc.
 // Example:
 
-
+//  store  function in variable 
 function handleClick() {
     console.log("Clicked!");
 }
