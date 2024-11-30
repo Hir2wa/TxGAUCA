@@ -135,3 +135,9 @@ button.addEventListener('click', handleClick);
 button.removeEventListener('click', handleClick);
 
 // storing in a variable 
+const handleClick = function () {
+    console.log("Clicked!");
+};
+button.addEventListener('click', handleClick);
+button.removeEventListener('click', handleClick);
+
