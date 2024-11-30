@@ -10,3 +10,14 @@
 
 // After the target phase, the event bubbles back up the DOM tree, traveling from the target element back to the root.
 // This allows ancestors of the target element to handle the event.
+
+
+// [Document]
+//    ↓ Capturing Phase
+// [Parent Element]
+//    ↓
+// [Target Element] ← Target Phase
+//    ↑
+// [Parent Element]
+//    ↑ Bubbling Phase
+// [Document]
