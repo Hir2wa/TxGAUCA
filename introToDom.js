@@ -134,4 +134,4 @@ function handleClick() {
 button.addEventListener('click', handleClick);
 button.removeEventListener('click', handleClick);
 
-// using 
+// storing in a variable 
