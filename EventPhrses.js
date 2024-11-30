@@ -30,3 +30,12 @@ const child = document.querySelector('#child');
 parent.addEventListener('click', () => {
     console.log('Parent Bubbling');
 });
+// Why Use Different Phases?
+// Capturing Phase:
+
+// Useful for intercepting events early in the flow.
+// Example: Logging or modifying events before they reach the target.
+// Bubbling Phase:
+
+// Commonly used for event delegation, where a parent element handles events from its child elements.
+// Example: Attaching a single click listener to a <ul> for handling clicks on multiple <li> elements.
