@@ -127,9 +127,11 @@
 // Pseudo-selectors: :first-child, :nth-child, etc.
 // Example:
 
-//  store  function in variable 
+//   using named function   function   to remove element 
 function handleClick() {
     console.log("Clicked!");
 }
 button.addEventListener('click', handleClick);
 button.removeEventListener('click', handleClick);
+
+// using 
