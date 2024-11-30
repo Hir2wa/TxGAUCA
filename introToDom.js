@@ -128,3 +128,8 @@
 // Example:
 
 
+function handleClick() {
+    console.log("Clicked!");
+}
+button.addEventListener('click', handleClick);
+button.removeEventListener('click', handleClick);
