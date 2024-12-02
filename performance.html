@@ -11,13 +11,16 @@
 
 
     <script>
-
+         const startingTime = performance.now()
+  
      for (let i= 0; i <= 200; i++) {
          const newElement = document.createElement('p');
          newElement.textContent = "this is a paragraph" + i;
          document.body.appendChild(newElement);
         
      }
+     const endingTime = performance.now();
+     console.log("this code took " +(endingTime - startingTime) + 'milliseconds')
 
 
     </script>
