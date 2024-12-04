@@ -11,3 +11,9 @@ function first() {
   first();
   console.log('Program end');
   
+
+  console.log('howdy');
+document.addEventListener('click', function numbers() {
+    console.log('123');
+});
+console.log('ice cream is tasty');
