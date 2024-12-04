@@ -21,4 +21,11 @@ function sinfASong(){
  
 
 getCoffe()
-sinfASong()
+sinfASong() 
+
+  // sychrous  function will be executed first then after asy..  go  after
+  console.log("1")
+  setTimeout(()=>{
+   console.log('2')
+ })
+  console.log('3');
