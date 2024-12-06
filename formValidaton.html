@@ -15,12 +15,54 @@ let createInputes ;
     
     createInputes=  document.createElement('input')
     createInputes.id = `index${index +1}`;
-
+    // intially issigned to zero 
+    createInputes.value = '0';
     document.body.appendChild(createInputes);
     createInputes.style.cssText= "margin-left:300px; display: block; margin-top:  10px";
  }
+// for the input 1
+ let th= document.querySelector('input');
+ console.log(th);
+  th.addEventListener('input',()=>{
+    if ( isNaN(th.value) || Number(th.value) <= 0) {
+        th.style.borderColor ='red';
+   
 
- 
+ } else{
+    th.style.borderColor = 'green';
+ }
+
+  })
+// for the  input 2
+  let th1= document.querySelector('#index2');
+ console.log(th1);
+  th1.addEventListener('input',()=>{
+    if ( isNaN(th1.value) || Number(th1.value) <= 0) {
+        th1.style.borderColor ='red';
+   
+
+ } else{
+    th1.style.borderColor = 'green';
+ }
+
+  })
+
+
+// i need to  compsre numbers if there are  equal that a user have insert 
+
+let val1= Number(th.value);
+let val2=Number(th.value);
+
+  if (val1 === val2) {
+     alert('The numbers are equal!')
+  }
+  else if(val1 < val2){
+    alert('Hey, the second number is larger (oops!! numbers must be equal)')
+  }
+  else{
+    alert('Hey, the first number is larger (oops!! numbers must be equal)')
+  }
+
 
 
     </script>
