@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--     
+ <input type="text">
+ <label for=""> </label>
+ 
+ <button>click me</button> -->
+
+
+    <script>
+ 
+let input= document.createElement('input');
+// it  is  visible  when you  insert text 
+input.placeholder= "Enter Task";
+ document.body.appendChild(input); 
+ // label
+ let label =  document.createElement('label');
+ document.body.appendChild(label);
+
+ //  here is the button 
+
+ let button = document.createElement('button')
+ button.textContent = 'click me';
+ button.style.marginLeft = "10px";
+label.appendChild(button);
+//  the parent of the list 
+let theparent= document.createElement('ul')
+theparent.id='todolist';
+
+document.body.appendChild(theparent);
+
+
+
+ button.addEventListener('click',()=>{
+let  theContent= input.value.trim();
+if (theContent === "") {
+  alert("invalid input");
+  return; //  to stop if the input is invalid 
+}
+  
+ //  creating new list 
+ let list = document.createElement('li');
+ list.textContent =  theContent;
+ theparent.appendChild(list);
+ //delete button
+  let deleteb= document.createElement('button');
+  deleteb.textContent= "delete me";
+  deleteb.style.marginLeft ="10px";
+let eventDelete = deleteb.addEventListener('click',()=>{
+  theparent.removeChild(list);
+});
+
+  list.appendChild(deleteb);
+  theparent.appendChild(list);
+ input.value=" ";
+ })
+
+    </script>
+</body>
+</html>
+
+
