@@ -120,7 +120,7 @@ function hello(name) {
 }
 
 
-console.log(hello("Alain"));
+console.log(hello("alain"));
  //19.function that displays //  At match ${team1} - ${team2}, teams played draw.//.....
  function uefaEuro2016(teams, scores) {
 
@@ -136,3 +136,4 @@ console.log(hello("Alain"));
     return `At match ${team1} - ${team2}, teams played draw.`;
   }
 }
+

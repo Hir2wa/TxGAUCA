@@ -122,6 +122,8 @@ console.log(removeVowels(sentence));
 
 
 
-  //   fing  time  for  ghm work out
+  let charr = ["2","5"];
+  let  num = charr.map(num => Number(num));
+  console.log(num);
 
  
