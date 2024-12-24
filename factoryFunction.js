@@ -14,3 +14,14 @@ const user2 = createUser('Bob', 30);
 
 user1.greet(); // Output: Hello, my name is Alice and I am 25 years old.
 user2.greet(); // Output: Hello, my name is Bob and I am 30 years old.
+
+
+ function myButton(type ,text ,colour){
+const el = document.createElement(type);
+ el.innerText = text;
+ el.style.color = colour;
+ document.body.append(el);
+  return el;
+}
+const el1= myButton('p1','hello world','black');
+const el2= myButton('input','hello rwanda','white');
