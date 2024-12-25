@@ -136,4 +136,10 @@ console.log(hello("alain"));
     return `At match ${team1} - ${team2}, teams played draw.`;
   }
 }
+//20 to  print the  character of javascript 
+let  char = "javascript";
+for (const charr  of char){
+  console.log(charr)
+}
+//
 
