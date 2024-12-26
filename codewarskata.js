@@ -141,5 +141,14 @@ let  char = "javascript";
 for (const charr  of char){
   console.log(charr)
 }
-//
+//21  tp print  the keys of object 
+const user = { name: 'Bob', age: 30 };
+ for  (
+const  userr in user
+ ){
+  console.log(
+    userr
+  )
+ }
+
 
