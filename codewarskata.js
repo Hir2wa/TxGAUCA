@@ -160,7 +160,7 @@ console.log(uniqueNumbers); // Output: [1, 2, 3, 4, 5]
 let duplicated = [1,3,4,4,5,5,6,6,7];
 let removedDuplicates = [...new Set(duplicated)];
 console.log(removedDuplicates)
-
+// making a  copy of 2  object and convert them back to abject using fromEntries  
 const obj1 = { a: 1, b: 2 };
 const obj2 = { c: 3, d: 4 };
 
