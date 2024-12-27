@@ -10,4 +10,10 @@ function greet(city, country) {
   // Using call() to change the context of `this`
   greet.call(person, 'New York', 'USA'); 
   // Output: Hello, my name is Alice, I live in New York, USA
+  const person1 = new Person('Alice');
+const person2 = new Person('Bob');
+
+const boundGreet = person1.greet.bind(person2);
+boundGreet(); // Output: Hello, my name is Bob
+
   
