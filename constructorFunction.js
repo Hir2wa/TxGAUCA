@@ -17,7 +17,7 @@ const boundGreet = person1.greet.bind(person2);
 boundGreet(); // Output: Hello, my name is Bob
 
   // we  go on curry function 
-  // A curried function to add three numbers
+  // A curried function to add three numbers  using arrow  function 
 function add(a) {
     return function(b) {
       return function(c) {
