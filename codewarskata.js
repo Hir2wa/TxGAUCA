@@ -156,3 +156,17 @@ function removeDuplicates(arr) {
 let numberu = [1, 2, 2, 3, 4, 4, 5];
 let uniqueNumbers = removeDuplicates(numberu)
 console.log(uniqueNumbers); // Output: [1, 2, 3, 4, 5]
+// removing dublicates inn my array 
+let duplicated = [1,3,4,4,5,5,6,6,7];
+let removedDuplicates = [...new Set(duplicated)];
+console.log(removedDuplicates)
+
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+
+const mergedObj = Object.fromEntries([
+  ...Object.entries(obj1),
+  ...Object.entries(obj2)
+]);
+
+console.log(mergedObj);  // Output: { a: 1, b: 2, c: 3, d: 4 }
