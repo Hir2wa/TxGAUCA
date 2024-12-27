@@ -143,12 +143,16 @@ for (const charr  of char){
 }
 //21  tp print  the keys of object 
 const user = { name: 'Bob', age: 30 };
- for  (
-const  userr in user
- ){
-  console.log(
-    userr
-  )
- }
+for (const key in user) {
+  console.log(key);
+}
 
+// Function to remove duplicates from an array
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
+}
 
+// Example usage
+let numberu = [1, 2, 2, 3, 4, 4, 5];
+let uniqueNumbers = removeDuplicates(numberu)
+console.log(uniqueNumbers); // Output: [1, 2, 3, 4, 5]
