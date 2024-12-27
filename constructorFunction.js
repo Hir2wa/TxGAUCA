@@ -30,4 +30,16 @@ function add(a) {
   const result = add(2)(3)(4);
   console.log(result);  // Output: 9
   // using traditional function 
+  // A curried function to add three numbers
+function add(a) {
+    return function(b) {
+      return function(c) {
+        return a + b + c;
+      };
+    };
+  }
+  
+  // Using the curried function
+  const result = add(2)(3)(4);
+  console.log(result);  // Output: 9
   
