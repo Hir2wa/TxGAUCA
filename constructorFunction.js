@@ -41,5 +41,5 @@ function add(a) {
     // Using the curried function
 
   const result = add(2)(3)(4);
-  console.log(result);  // Output: 9
+  console.log(result);  
   
