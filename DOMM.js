@@ -3,4 +3,5 @@
 //  and external functionalities like navigation, screen dimensions, and popups.
 
 // firstchild  //  first element  child    these  are  difference since  it can return also text  it is  available
-// previdouselementsibling
+// previdouselementsibling // nextSibling 
+//inner text follows  css also  if  the page is hiden also  it will be hidden 
