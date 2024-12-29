@@ -5,3 +5,4 @@
 // firstchild  //  first element  child    these  are  difference since  it can return also text  it is  available
 // previdouselementsibling // nextSibling 
 //inner text follows  css also  if  the page is hiden also  it will be hidden 
+//  while  text conntent  ignore ccs 
