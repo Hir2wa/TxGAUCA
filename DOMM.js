@@ -6,3 +6,11 @@
 // previdouselementsibling // nextSibling 
 //inner text follows  css also  if  the page is hiden also  it will be hidden 
 //  while  text conntent  ignore ccs 
+
+//After Method    we can use it to insert after  an node or  an element
+//  set  attrivutes  and getattributes  
+//  actually  for  set attribut  take two argument   name  of  attribute and  value 
+//  hasattribute  returna  attributes 
+//  removeAttribute    to remove the attribute to an element 
+// getComputedStyle its  a window method   is used  when  the css  is  in the style tage  not on in line 
+// window.getComputedStyle(element name)
