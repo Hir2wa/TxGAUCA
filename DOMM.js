@@ -18,3 +18,4 @@
 
 
 //event action happening in the browser 
+//  shadow dom help us  to crete scoped dom  tree inside our element 
