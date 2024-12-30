@@ -11,6 +11,10 @@
 //  set  attrivutes  and getattributes  
 //  actually  for  set attribut  take two argument   name  of  attribute and  value 
 //  hasattribute  returna  attributes 
+
 //  removeAttribute    to remove the attribute to an element 
 // getComputedStyle its  a window method   is used  when  the css  is  in the style tage  not on in line 
 // window.getComputedStyle(element name)
+
+
+//event action happening in the browser 
