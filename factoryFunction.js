@@ -23,5 +23,4 @@ const el = document.createElement(type);
  document.body.append(el);
   return el;
 }
-const el1= myButton('p1','hello world','black');
 const el2= myButton('input','hello rwanda','white');
