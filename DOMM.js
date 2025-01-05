@@ -19,3 +19,4 @@
 
 //event action happening in the browser 
 //  shadow dom help us  to crete scoped dom  tree inside our element 
+//How does the DOM handle large datasets or complex trees efficiently?   we use  virtuaal dom and  event deligation 
