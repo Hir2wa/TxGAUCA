@@ -20,48 +20,90 @@ let createInputes ;
     document.body.appendChild(createInputes);
     createInputes.style.cssText= "margin-left:300px; display: block; margin-top:  10px";
  }
-// for the input 1
- let th= document.querySelector('input');
- console.log(th);
-  th.addEventListener('input',()=>{
-    if ( isNaN(th.value) || Number(th.value) <= 0) {
-        th.style.borderColor ='red';
+// // for the input 1
+//  let th= document.querySelector('input');
+//  console.log(th);
+//   th.addEventListener('input',()=>{
+//     if ( isNaN(th.value) || Number(th.value) <= 0) {
+//         th.style.borderColor ='red';
    
 
- } else{
-    th.style.borderColor = 'green';
- }
+//  } else{
+//     th.style.borderColor = 'green';
+//  }
 
-  })
-// for the  input 2
-  let th1= document.querySelector('#index2');
- console.log(th1);
-  th1.addEventListener('input',()=>{
-    if ( isNaN(th1.value) || Number(th1.value) <= 0) {
-        th1.style.borderColor ='red';
+//   })
+// // for the  input 2
+//   let th1= document.querySelector('#index2');
+//  console.log(th1);
+//   th1.addEventListener('input',()=>{
+//     if ( isNaN(th1.value) || Number(th1.value) <= 0) {
+//         th1.style.borderColor ='red';
    
 
- } else{
-    th1.style.borderColor = 'green';
- }
+//  } else{
+//     th1.style.borderColor = 'green';
+//  }
 
-  })
+//   })
+ ///    by using  the  querSelectorAll  am eble  to minimise my codes 
 
 
-// i need to  compsre numbers if there are  equal that a user have insert 
 
-let val1= Number(th.value);
-let val2=Number(th.value);
+ let inputts = document.querySelectorAll('input');
+let validNumber = [null, null];
+console.log(inputts);
 
-  if (val1 === val2) {
-     alert('The numbers are equal!')
-  }
-  else if(val1 < val2){
-    alert('Hey, the second number is larger (oops!! numbers must be equal)')
-  }
-  else{
-    alert('Hey, the first number is larger (oops!! numbers must be equal)')
-  }
+ 
+const messageDiv = document.createElement('div');
+document.body.appendChild(messageDiv);
+messageDiv.style.cssText= "margin-left:300px;  margin-top:  10px"
+
+inputts.forEach((input, index) => {
+  input.addEventListener('input', () => {
+    const value = input.value.trim();
+
+
+
+        if (isNaN(value) || Number(value) < 0) {
+      input.style.borderColor = 'red';  
+           validNumber[index] = null;  
+      messageDiv.textContent = '';  
+
+
+      
+    } else {
+      input.style.borderColor = 'green';  
+        validNumber[index] = Number(value);  
+
+      
+        if (validNumber[0] !== null && validNumber[1] !== null) {
+         if (validNumber[0] === validNumber[1]) {
+            messageDiv.textContent = 'The numbers are equal';
+        } else {
+          messageDiv.textContent = 'The numbers are not equal';
+        }
+       }
+    }
+  });
+});
+
+
+
+
+
+// let val1= Number(th.value);
+// let val2=Number(th1.value);
+
+//   if (val1 === val2) {
+//      alert('The numbers are equal!')
+//   }
+//   else if(val1 < val2){
+//     alert('Hey, the second number is larger (oops!! numbers must be equal)')
+//   }
+//   else{
+//     alert('Hey, the first number is larger (oops!! numbers must be equal)')
+//   }
 
 
 
@@ -75,11 +117,6 @@ let val2=Number(th.value);
 
 
 
-<script>
-
-
-
-
-</script>
+<script src="factoryFunction.js"></script>
 </body>
 </html>

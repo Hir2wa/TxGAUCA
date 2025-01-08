@@ -1,374 +1,173 @@
+// 1. Doubling numbers using `map()`
 const numbers = [1, 2, 3, 4, 5];
-const newNumber = numbers.map(num=> num*2);
-console.log(newNumber);
+const doubledNumbers = numbers.map(num => num * 2);
+console.log(doubledNumbers); // [2, 4, 6, 8, 10]
 
-//even numbers 
-const numberss = [1, 2, 3, 4, 5];
-const newNumberr=numberss.filter(num=>num%2==0);
-console.log(newNumberr);
+// 2. Filtering even numbers using `filter()`
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // [2, 4]
 
-
-//reversing array 
-function digitize(n) {
-    let newArray = [];
-    for(i=n.length -1; i>=0;i--){
-       newArray.push(n[i]); 
-    }
-    return newArray;
-  }
-  console.log(digitize([1,3,2,5,3]));
-
-  // taking  a list of 1,3,2,5,3  then reverse 
-  
-
-  function myWorld(){
-    let world= "helo world";
-  return  world.split( " "); 
-
-
-  }
-  
-  console.log(myWorld());
-
-
-
-  function myNumbers(){
-    var numbr = 12345;
-
-     let digits =  numbr.toString().split('');
-     return digits.map(Number);
-
-  }
-console.log(myNumbers());
-
-// tipp 
-//converting  list to string 
-//splitting to array
-// using msp to  convert to Numbers 
-function digitize(n) {
-    let converted  = n.toString().split('');
-    let toDigits = converted.map(Number); 
-    let newArray =[];
-    for(let i=toDigits.length -1; i>=0;i--){
-       newArray.push(toDigits[i]); 
-    }
-    return newArray;
-  }
-  let myList =35231;
-  console.log(digitize(myList));
-
-
-  function digitize(n) {
-    return String(n).split('').map(Number).reverse()
-  }
-
-
-
-
-  function myreverse(n){
-   return n.reverse();
-  }
-  console.log(myreverse([1,2,3,5,6]));
-    
-
-
-  let  num = [1,2,3,4,5,6];
-  function  maxnum(n){
-     return n.filter(num => num%2==0);
-  }
-   console.log(maxnum(num));
-
-    function  maxNumber(){
-
-    }
-
-
-
-    function rockpaperscissors(player1, player2) {
-      let result = '';
-      
-      
-      if (player1 === player2) {
-        result = "draw";
-      }
-      
-    
-      else if (player1 === 'rock') {
-        if (player2 === 'paper') {
-          result = "player2 wins";
-        } else if (player2 === 'scissors') {
-          result = "player1 wins"; 
-        }
-      }
-    
-     
-      else if (player1 === 'paper') {
-        if (player2 === 'rock') {
-          
-          result =     "player1 wins"; 
-        } else if (player2 === 'scissors') {
-          result = "player2 wins"; 
-        }
-      }
-    
-   
-      else if (player1 === 'scissors') {
-        if (player2 === 'paper') {
-          result = "player1 wins"; 
-           } else if (player2 === 'rock') {
-             
-            result = "player2 wins"; 
-        }
-      }
-    
-      return `player1 played ${player1} and player2 played ${player2}. ${result}!`;
-    }
-    
-    console.log(rockpaperscissors("rock", "paper")); 
-
-
-
-
-
-
-
-
-
-    const rps = (p1,p2)=>{
-     
-         if (p1==p2){
-          result = 'draw!';
-         }
-         else if(
-          (p1 =="paper" && p2 =="rock")||
-          (p1=="rock" && p2 =="scissors")||
-          (p1=="scissors" && p2=="paper")
-         ){
-         return `${p1} , ${p2} --> player 1 won! `
-         }else{
-          return `${p1} , ${p2}--> player 2 won!`
-         }
-    };
-    
-     console.log(rps("rock","paper"));
-
-
-
-
-
-
-
-
-
-     //  here is a  funciton to    solt 
-      function ssort(){
-      let numbers = [1,3,5,6];
-      let neww = numbers.sort((a,b)=>b-a);
-       return neww;
-       
-      }
- console.log(ssort());
-
-
-
- //  write a  functionn  thata= takes  a   sentence and  reverse  and  return the  reversed   word 
- //  am a student at auca 
-  function mysentence(sentence){
-    
-      return  sentence.split().
-         
-      reverse().join();
-  }
-  console.log(mysentence(("am a student at auca ")));
-     
-  const numberrs = [3, 2, 4, 1, 5];
-  // even if  yoou can create a new array still   it will be referencing it     means it will  change 
-// [...numbers] creates a shallow copy, so reverse() does not mutate the original
-const reverted = [...numberrs].reverse();
-reverted[0] = 5;
- const rreversed = numberrs.reverse();
-console.log(numbers[0]); // 3
-console.log(reverted);
-console.log(numberrs);
-
-//   shift  return   remove  the  first element in the array and  return that    value
-let nmum= numberrs.shift()
-console.log(nmum);
-console.log(numberss);
-const array = [1, 2, 3, 4, 5];
-
-
-//  checks  if  in the  array  there  is  condition    is true and  returnn  the  true   
-// note  it doesn't  modfy the  array 
-// Checks whether an element is even
-const even = (element) => element % 2 === 0;
-
-console.log(array.some(even));
-// Expected output: true
- 
- 
-// sort  modft  the orginal array
- console.log(numberrs.sort());
-  console.log(numberrs);
-//  splice   modfy   the original   array  it  does not craete a copy 
-
-
-const array1 = ['a', 'b', 'c'];
-const iterator1 = array1[Symbol.iterator]();
-
-for (const value of iterator1) {
-  console.log(value);
+// 3. Reversing an array using `reverse()`
+function reverseArray(arr) {
+  return [...arr].reverse(); // Creates a shallow copy to avoid modifying the original array
 }
+console.log(reverseArray([1, 2, 3, 4, 5])); // [5, 4, 3, 2, 1]
 
-// Expected output: "a"
-// Expected output: "b"
-// Expected output: "c" 
-
-
-// iteribles  
-const arwray = [1, 2, 3];
-const iterator = arwray[Symbol.iterator]();
- console.log(iterator.next());
- console.log(iterator.next());
- console.log(iterator.next());
- console.log(iterator.next());
- console.log(iterator.next());
- console.log(iterator.next());
-
- console.log(Number("245r"));
-  console.log(parseInt("sgjsj.334"))
-  console.log(parseFloat("sdhnsdin.90"));
-  console.log(parseInt("86.ab"));
-  
-  
-     let numberArray  = new Array(20);
-     console.log(numberArray.length);
-
-
-
-     //    how  toReversed works  //   it  creates  another new arrayb without modfying   the original one 
-      let newwArray =  arwray.toReversed();
-       console.log(arwray);
-       
-      console.log(newwArray);   
-      
-      
-  //  toString doesn't  modfing original  array 
-      let myyarray =["Alain",50,"Fabrice"];
-      let newMyArray = myyarray.toString();
-      console.log(newMyArray);
-      console.log(myyarray);
-      
-       let splittedAray = newMyArray.split(" ")
-       console.log(splittedAray);
-      let thatthisnew = "Alain,50,  Fabrice";
-      let newSplitted = thatthisnew.split(" ");
-      console.log(newSplitted);
-      // values   which  retrun new  iterible object 
-      let  words=["Alain",50,"Fabrice"];
-      let newWords = words.join(" ");
-      console.log(newWords);
-      
-
-       // keys()   returns  the      indexes  of   every element 
-
-       // includes(method)  check if the  array include  that element and rerturn true 
-       console.log(words.includes(50));
-        
-
-    // callback  is a  function  that  passed as  an argument  to  another  function 
-
-
-
-
-//     Real-Life Example:
-// Parent: The parent teaches the child valuable lessons or gives them resources (like money, knowledge, or skills).
-// Child: The child can "remember" these lessons and use them later in life, even when the parent is no longer actively involved.
-// If the child doesn't use or remember the lessons or resources from the parent, it’s like no closure. 
-//The child doesn't retain anything from the parent, and there’s no lasting connection to the parent’s environment (their "scope").
-
-
-              function greet(name,callback){
-                return callback(name);
-              }
-               function howto(name){
-                  return "hello  " +name;
-               }
-
-               console.log(greet("Alain", howto));
-
-
-               function   ghmHours(name, hours){
-     
-                function Name(){
-                  return name;
-                }
-               
-                  
-            
-            
-                function yourHours(){
-                  return hours;
-                }
-                
-                
-              
-            
-                return ` Name: ${name}  ,   Hours: ${hours}`;
-            
-              }   
-
-       
-              let Alain = ghmHours("Alain", 12);
-              console(Alain);            
-          
-            
-
-
-                
-            
-        
-
-              //FizzBuzz-FizzBuzz
-function fizzbuzz(n)
-{
-   let myArray = [];
-  
-  for( i=1; i<=n ; i++){
-     if ( i%3==0) {
-      myArray.push("Fizz")
-     } else if( i%5==0){
-      myArray.push("Buzz");
-     }else if( i%3==0 && i%5==0 ){
-      myArray.push("FizzBuzz")
-    } 
-
-    return myArray;
- }
-
-
-
+// 4. Converting a number into an array of digits and reversing it
+function digitize(n) {
+  return String(n).split('').map(Number).reverse();
 }
-console.log(fizzbuzz(20));
- 
+console.log(digitize(35231)); // [1, 3, 2, 5, 3]
 
+// 5. Reversing the words in a sentence
+function reverseSentence(sentence) {
+  return sentence.split(" ").reverse().join(" "); // Reverses the words in the sentence
+}
+console.log(reverseSentence("am a student at auca")); // "auca at student a am"
 
+// 6. Sorting numbers in descending order
+function ssort() {
+  let numbers = [1, 3, 5, 6];
+  return numbers.sort((a, b) => b - a); // Sorting in descending order
+}
+console.log(ssort()); // [6, 5, 3, 1]
+
+// 7. FizzBuzz function
 function fizzbuzz(n) {
-  let result = [];
-  
+  let myArray = [];
   for (let i = 1; i <= n; i++) {
-      if (i % 3 === 0 && i % 5 === 0) {
-          result.push("FizzBuzz");
-      } else if (i % 3 === 0) {
-          result.push("Fizz");
-      } else if (i % 5 === 0) {
-          result.push("Buzz");
-      } else {
-          result.push(i);
-      }
+    if (i % 3 === 0 && i % 5 === 0) {
+      myArray.push("FizzBuzz");
+    } else if (i % 3 === 0) {
+      myArray.push("Fizz");
+    } else if (i % 5 === 0) {
+      myArray.push("Buzz");
+    } else {
+      myArray.push(i);
+    }
   }
+  return myArray;
+}
+console.log(fizzbuzz(20)); // [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", ...]
 
-  return result;
+
+// 8. Greeting function using a callback
+function greet(name, callback) {
+  return callback(name);
 }
 
-console.log(fizzbuzz(43));
+function howTo(name) {
+  return "Hello " + name;
+}
+
+console.log(greet("Alain", howTo)); // Hello Alain
+
+// 9. Checking if an array includes an element
+const words = ["Alain", 50, "Fabrice"];
+console.log(words.includes(50)); // true
+
+// 10. Using shift() to remove the first element of an array
+let nmum = words.shift();
+console.log(nmum); // Alain
+console.log(words); // [50, "Fabrice"]
+
+// 11. Checking if any element in an array is even using `some()`
+const numbers2 = [1, 2, 3, 4, 5];
+console.log(numbers2.some(num => num % 2 === 0)); // true
+
+// 12. Demonstrating `splice()` to remove elements at a specific index
+const array1 = ['a', 'b', 'c'];
+array1.splice(1, 1); // Removes the second element
+console.log(array1); // ["a", "c"]
+
+// 13. Creating an iterator for an array
+const iterator1 = array1[Symbol.iterator]();
+console.log(iterator1.next()); // {value: "a", done: false}
+console.log(iterator1.next()); // {value: "c", done: false}
+console.log(iterator1.next()); // {value: undefined, done: true}
+
+// 14. Splitting a string into an array and joining it back
+let myyarray = ["Alain", 50, "Fabrice"];
+let newMyArray = myyarray.toString(); // Converts array to a string
+console.log(newMyArray); // "Alain,50,Fabrice"
+let splittedArray = newMyArray.split(","); // Splits the string back to an array
+console.log(splittedArray); // ["Alain", "50", "Fabrice"]
+
+// 15. Using `join()` to create a string from an array
+let newWords = words.join(" "); // Joins elements of array into a string
+console.log(newWords); // "Alain Fabrice"
+
+// 16. Using `toString()` to convert an array into a string
+let array = [1, 2, 3];
+let arrayString = array.toString();
+console.log(arrayString); // "1,2,3"
+
+// 17. Function to reverse an array without modifying the original array
+let reversedArray = [...array].reverse();
+console.log(reversedArray); // [3, 2, 1]
+console.log(array); // [1, 2, 3] (original array is unchanged)
+//18.  function that returns //Hello, Name or World!
+function hello(name) {
+ 
+  if (!name || name === '') {
+    return "Hello, World!";
+  }
+
+  
+  const wantedName = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+
+  return `Hello, ${wantedName}!`;
+}
+
+
+console.log(hello("alain"));
+ //19.function that displays //  At match ${team1} - ${team2}, teams played draw.//.....
+ function uefaEuro2016(teams, scores) {
+
+  const [team1, team2] = teams;
+  const [score1, score2] = scores;
+
+  
+  if (score1 > score2) {
+    return `At match ${team1} - ${team2}, ${team1} won!`;
+  } else if (score1 < score2) {
+    return `At match ${team1} - ${team2}, ${team2} won!`;
+  } else {
+    return `At match ${team1} - ${team2}, teams played draw.`;
+  }
+}
+//20 to  print the  character of javascript 
+let  char = "javascript";
+for (const charr  of char){
+  console.log(charr)
+}
+//21  tp print  the keys of object 
+const user = { name: 'Bob', age: 30 };
+for (const key in user) {
+  console.log(key);
+}
+
+// Function to remove duplicates from an array
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
+}
+
+// Example usage
+let numberu = [1, 2, 2, 3, 4, 4, 5];
+let uniqueNumbers = removeDuplicates(numberu)
+console.log(uniqueNumbers); // Output: [1, 2, 3, 4, 5]
+// removing dublicates inn my array 
+let duplicated = [1,3,4,4,5,5,6,6,7];
+let removedDuplicates = [...new Set(duplicated)];
+console.log(removedDuplicates)
+// making a  copy of 2  object and convert them back to abject using fromEntries  
+//object   obj.entries  return an array  then  these from entries reconvert it in the object 
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, d: 4 };
+
+const mergedObj = Object.fromEntries([
+  ...Object.entries(obj1),
+  ...Object.entries(obj2)
+]);
+
+console.log(mergedObj);  // Output: { a: 1, b: 2, c: 3, d: 4 }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy Loading Images</title>
+  <style>
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lazy Loading Images Example</h1>
+
+  <!-- Placeholder Images -->
+  <img class="lazy" data-src="image1.jpg" src="placeholder.jpg" alt="Image 1">
+  <img class="lazy" data-src="image2.jpg" src="placeholder.jpg" alt="Image 2">
+  <img class="lazy" data-src="image3.jpg" src="placeholder.jpg" alt="Image 3">
+  <img class="lazy" data-src="image4.jpg" src="placeholder.jpg" alt="Image 4">
+  
+  <script>
+    // Function to load the image when it enters the viewport
+    const loadImage = (image) => {
+      const src = image.getAttribute('data-src');
+      image.src = src;  // Set the actual image source
+      image.removeAttribute('data-src');  // Remove the data-src attribute
+      image.classList.remove('lazy');  // Optionally remove the 'lazy' class
+    };
+
+    // Create an IntersectionObserver to track when images are in the viewport
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          loadImage(entry.target);  // Load the image when it's in the viewport
+          observer.unobserve(entry.target);  // Stop observing the image after loading
+        }
+      });
+    }, {
+      rootMargin: '200px',  // Start loading before the image enters the viewport
+    });
+
+    // Target all images with the 'lazy' class
+    const images = document.querySelectorAll('img.lazy');
+    images.forEach(image => observer.observe(image));  // Start observing each image
+  </script>
+
+</body>
+</html>
